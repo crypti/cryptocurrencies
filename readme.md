@@ -1272,7 +1272,7 @@ There are currently **1238 cryptocurrencies** represented*:
 | `VSL` | vSlice |
 | `WBTC` | wBTC |
 
-<small><em>* Last updated: Thu, 22 Jun 2017 13:48:19 GMT</em></small>
+<small><em>* Last updated: Thu, 22 Jun 2017 14:21:18 GMT</em></small>
 <!-- END TABLE INJECT -->
 
 ## Building

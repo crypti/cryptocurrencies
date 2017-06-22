@@ -40,7 +40,8 @@ fetch(endpoint)
 
 	table += `\n<small><em>* Last updated: ${new Date().toUTCString()}</em></small>`;
 
-	const updated = template.replace(/<!-- BEGIN TABLE INJECT -->(\w|\W)*<!-- END TABLE INJECT -->/gim, `<!-- BEGIN TABLE INJECT -->\n${table}\n<!-- END TABLE INJECT -->`);
+	const target = /<!-- BEGIN TABLE INJECT -->(\w|\W)*<!-- END TABLE INJECT -->/gim;
+	const updated = template.replace(target, `<!-- BEGIN TABLE INJECT -->\n${table}\n<!-- END TABLE INJECT -->`);
 	fs.writeFileSync('readme.md', updated);
 	console.log('Readme Markdown Table updated');
 })
