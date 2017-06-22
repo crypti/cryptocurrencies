@@ -4,9 +4,6 @@ const sortby = require('lodash.sortby');
 
 const endpoint = 'https://www.cryptocompare.com/api/data/coinlist/';
 
-/**
- * Build the JSON file based on the cryptocompare coinlist.
- */
 fetch(endpoint)
 .then(response => response.json())
 .then(json => {
@@ -14,6 +11,9 @@ fetch(endpoint)
 
 	const symbols = {};
 
+	/**
+	 * Build the JSON file based on the cryptocompare coinlist.
+	 */
 	sorted.forEach(currency => {
 		const {Name, CoinName} = currency;
 		symbols[Name] = CoinName;
@@ -22,8 +22,9 @@ fetch(endpoint)
 	fs.writeFileSync('cryptocurrencies.json', JSON.stringify(symbols, null, 2));
 	console.log('JSON File written');
 
-	// --------------------------------------------- //
-	// Now build the Readme
+	/**
+	 * Build the Markdown Table of currencies in the Readme.
+	 */
 	const template = fs.readFileSync('readme.md').toString();
 	const data = JSON.parse(fs.readFileSync('cryptocurrencies.json').toString());
 
@@ -40,8 +41,9 @@ fetch(endpoint)
 
 	table += `\n<small><em>* Last updated: ${new Date().toUTCString()}</em></small>`;
 
-	const target = /<!-- BEGIN TABLE INJECT -->(\w|\W)*<!-- END TABLE INJECT -->/gim;
-	const updated = template.replace(target, `<!-- BEGIN TABLE INJECT -->\n${table}\n<!-- END TABLE INJECT -->`);
+	// Look for the HTML comments in the README as a target
+	const targetRegex = /<!-- BEGIN TABLE INJECT -->(\w|\W)*<!-- END TABLE INJECT -->/gim;
+	const updated = template.replace(targetRegex, `<!-- BEGIN TABLE INJECT -->\n${table}\n<!-- END TABLE INJECT -->`);
 	fs.writeFileSync('readme.md', updated);
 	console.log('Readme Markdown Table updated');
 })
