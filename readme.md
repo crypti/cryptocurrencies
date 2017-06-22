@@ -18,8 +18,12 @@ const cryptocurrencies = require('cryptocurrencies');
 
 cryptocurrencies.BTC;
 //=> 'Bitcoin'
+
+cryptocurrencies.symbols();
+//=> ['42', ... 'BTC', 'ETH', 'LTC', ...]
 ```
 
+## Cryptocurrencies
 <!-- DO NOT REMOVE THE COMMENTS BELOW, OR EDIT THIS TABLE DIRECTLY. -->
 <!-- Use `npm run build` to auto-generate the table. -->  
 
