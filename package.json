@@ -1,0 +1,39 @@
+{
+  "name": "cryptocurrencies",
+  "version": "1.0.0",
+  "description": "A JSON list of all the cryptocurrency symbols",
+  "license": "MIT",
+  "repository": "radiovisual/cryptocurrencies",
+  "author": {
+    "name": "Michael Wuergler",
+    "email": "wuergler@gmail.com",
+    "url": "numetriclabs.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cryptocurrencies.json",
+    "index.js"
+  ],
+  "keywords": [
+    "symbols",
+    "JSON",
+    "list",
+    "cryptocurrencies",
+    "cryptocurrency"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash.sortby": "^4.7.0",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
