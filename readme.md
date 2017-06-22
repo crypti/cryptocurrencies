@@ -1288,4 +1288,4 @@ $ npm run build
 
 ## License
 
-MIT © [Michael Wuergler](http://numetriclabs.com)
+MIT © [Crypti Team](https://github.com/crypti)

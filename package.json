@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "description": "A JSON list of all the cryptocurrency symbols",
   "license": "MIT",
-  "repository": "radiovisual/cryptocurrencies",
-  "author": {
-    "name": "Michael Wuergler",
-    "email": "wuergler@gmail.com",
-    "url": "numetriclabs.com"
-  },
+  "repository": "crypti/cryptocurrencies",
+  "contributors": [
+    {
+      "name": "Michael Wuergler",
+      "email": "senjudev@gmail.com",
+      "url": "github.com/radiovisual"
+    },
+    {
+      "name": "Brandon Him",
+      "email": "brandonhim@live.com",
+      "url": "github.com/brh55"
+    }
+  ],
   "engines": {
     "node": ">=4"
   },
