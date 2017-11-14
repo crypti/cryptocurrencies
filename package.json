@@ -1,6 +1,6 @@
 {
   "name": "cryptocurrencies",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A JSON list of all the cryptocurrency symbols",
   "license": "MIT",
   "repository": "crypti/cryptocurrencies",
