@@ -2012,7 +2012,7 @@ There are currently **1973 cryptocurrencies** represented*:
 
 ## Building
 
-The JSON list and the Markdown Table shown above (in this readme) are auto-generated
+The JSON list, the currency icons, and the Markdown Table shown above (in this readme) are auto-generated
 from the coin list made available by the [cryptocompare coinlist API](https://www.cryptocompare.com/api/data/coinlist/),
 and can be updated automatically by running:
 
@@ -2020,6 +2020,8 @@ and can be updated automatically by running:
 $ npm run build
 ```
 
+:bulb: Note that this build routine syncronously downloads the currency icons and saves them to the `images` directory. This means
+that the build routine takes a few minutes, since it has to process thousands of images.
 
 ## License
 
