@@ -338,8 +338,8 @@ There are currently **1973 cryptocurrencies** represented*:
 | `BURST` | BurstCoin |
 | `BUZZ` | BuzzCoin |
 | `BYC` | ByteCent |
-| `BTE` | ByteCoin |
 | `BCN` | ByteCoin |
+| `BTE` | ByteCoin |
 | `GBYTE` | Byteball |
 | `BTH` | Bytether  |
 | `BTM*` | Bytom |
@@ -1918,7 +1918,7 @@ There are currently **1973 cryptocurrencies** represented*:
 | `WISC` | WisdomCoin |
 | `WSC` | WiserCoin |
 | `WSH` | Wish Finance |
-| `WISH*` | WishFinance |
+| `WISH* (1)` | WishFinance |
 | `WLK` | Wolk |
 | `WOMEN` | WomenCoin |
 | `LOG` | Wood Coin |
@@ -2007,7 +2007,7 @@ There are currently **1973 cryptocurrencies** represented*:
 | `VSL` | vSlice |
 | `WBTC` | wBTC |
 
-<small><em>* Last updated: Wed, 10 Jan 2018 20:48:42 GMT</em></small>
+<small><em>* Last updated: Wed, 10 Jan 2018 23:52:50 GMT</em></small>
 <!-- END TABLE INJECT -->
 
 ## Building
