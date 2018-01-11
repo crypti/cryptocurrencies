@@ -2020,7 +2020,7 @@ and can be updated automatically by running:
 $ npm run build
 ```
 
-:bulb: Note that this build routine syncronously downloads the currency icons and saves them to the `images` directory. This means
+:bulb: Note that this build routine synchronously downloads the currency icons and saves them to the `images` directory. This means
 that the build routine takes a few minutes, since it has to process thousands of images.
 
 ## License
