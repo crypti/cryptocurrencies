@@ -2,9 +2,10 @@ const fs = require('fs');
 const fetch = require('isomorphic-fetch');
 const sortby = require('lodash.sortby');
 const request = require('sync-request');
-const endpoint = 'https://www.cryptocompare.com/api/data/coinlist/';
 const ora = require('ora');
 const chalk = require('chalk');
+
+const endpoint = 'https://www.cryptocompare.com/api/data/coinlist/';
 
 const spinner = ora('Building currencies').start();
 spinner.color = 'magenta';
@@ -21,7 +22,7 @@ fetch(endpoint)
 	 * Build the JSON file based on the cryptocompare coinlist.
 	 */
 	sorted.forEach((currency, index) => {
-		const { Name, CoinName, ImageUrl } = currency;
+		const {Name, CoinName, ImageUrl} = currency;
 		symbols[Name] = CoinName;
 
 		// download the image for future use
@@ -30,15 +31,15 @@ fetch(endpoint)
 			spinner.render();
 			const res = request('get', `https://www.cryptocompare.com${ImageUrl}`);
 			fs.writeFileSync(`images/${Name}.${ImageUrl.split('.').pop()}`, res.getBody());
-			imagesSaved = imagesSaved + 1;
+			imagesSaved += 1;
 		}
 	});
 
 	spinner.succeed([`${imagesSaved} images saved to /images`]);
-	
+
 	spinner.color = 'yellow';
 	spinner.start(`Saving cryptocurrencies.json file`);
-	
+
 	fs.writeFileSync('cryptocurrencies.json', JSON.stringify(symbols, null, 2));
 	spinner.succeed(`${sorted.length} currencies saved to cryptocurrencies.json`);
 
@@ -70,6 +71,5 @@ fetch(endpoint)
 	spinner.succeed(['Readme Markdown Table updated']);
 
 	console.log('\n', 'Remember to', chalk.yellow('git commit'), 'and', chalk.yellow('npm publish'));
-	
 })
 .catch(err => console.error(err));
