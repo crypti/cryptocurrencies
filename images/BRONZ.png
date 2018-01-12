@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>The website is restarting</title>
+<script type="text/javascript">
+//<![CDATA[
+window.__mirage2 = {petok:"3451ba2e128405b9f7bb0c6b4c9a3bb0482eb195-1515628144-1800"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<style>
+		body {
+			background: #EEE;
+			font-family: Arial, sans-serif;
+			padding-top:20px;
+		}
+		
+		.bubble {
+			background: #FFF;
+			padding: 10px;
+			border-radius: 10px;
+		}
+		
+		h1 {
+  			font-weight: bold;
+			color: #e85505;		
+			margin-bottom: 5px;
+		}
+		
+		.hypotesis {
+			color: #666;
+			line-height: 25px;
+			counter-reset: li;
+			list-style-type: none;
+		}
+		
+		.hypotesis a.item {
+			position: relative;
+			display: block;
+			background: #f5f5f5;
+			padding: .4em .4em .4em 2em;
+			*padding: .4em;
+			margin: .5em 0;
+			color: #444;
+			text-decoration: none;
+			border-radius: .3em;
+			transition: all .3s ease-out;   
+		}
+		
+		.hypotesis a.item:hover {
+			background: #DDD;
+		}
+		
+		.hypotesis a.item:hover:before {
+			transform: rotate(360deg);  
+		}
+		
+		.hypotesis a.item:before {
+			content: counter(li);
+			counter-increment: li;
+			position: absolute; 
+			font-size: 15px;
+			left: -30px;
+			top: 50%;
+			margin-top: -1.3em;
+			background: #87ceeb;
+			height: 40px;
+			width: 40px;
+			line-height: 30px;
+			border: .3em solid #fff;
+			text-align: center;
+			color: #FFF;
+			font-weight: bold;
+			border-radius: 2em;
+			transition: all .3s ease-out;
+		}	
+		
+		.twitter-message {
+			background: #FFF;
+			padding:15px;
+			margin-left: -15px;
+			margin-right: -15px;
+			margin-top: -15px;
+			border-bottom: 3px solid #DDD;
+		}
+		.tweet-count {
+			border-radius: 5px 0 0 0;		
+			position: absolute;
+			right: 75px;
+			bottom: 16px;
+			z-index: 999;
+			overflow: hidden;
+			font-size: 11px;
+			padding-left: 15px;
+			padding-right: 15px;
+			width: 110px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-4" style="text-align:center;">
+<img data-cfstyle="width:100%;max-width:300px;" data-cfsrc="https://www.cryptocompare.com/media/19586/error-500.png" style="display:none;visibility:hidden;" /><noscript><img style="width:100%;max-width:300px;" src="https://www.cryptocompare.com/media/19586/error-500.png" /></noscript>
+</div>
+<div class="bubble col-md-8">
+<h1>Ooh-ooh-ooh-eee-eee!!! ERROR 500!</h1>
+<p>Actually, what I'm trying to say is that I don't know what happened. I'm a little confused, but I have some hypotesis about what happened:</p>
+<ol class="hypotesis">
+<li>
+<a href="" data-toggle="tooltip" data-placement="top" title="Click to reload! It might work.... it probably won't but you never know!" class="item">This is a temporary error. Do you remember what you did before you got this error? Good! Wait a minute and do it again!</a>
+</li>
+<li>
+<a class="show-tooltip item" data-toggle="collapse" href="#contact-form" aria-expanded="true" aria-controls="contact-form" data-toggle="tooltip" data-placement="top" title="Tweet at us and let us know you are having issues!">
+Our 'trained' programmers never forseen what you were trying to do. They do that from time to time. You can unleash your anger at our twitter account!
+</a>
+<div class="collapse in" id="contact-form">
+<div class="well" style="overflow: hidden;">
+<div class="row">
+<div class="col-md-12">
+<div class="twitter-message input-group">
+<div class="tweet-count">140 chars left</div>
+<textarea class="tweet-content form-control custom-control" rows="3" style="resize:none">@cryptocompare </textarea>
+<a class="tweet-problem input-group-addon btn btn-primary" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.cryptocompare.com%2Fconfig%2Fsplashes%2F500Error.html&text=@cryptocompare+Website+seems+to+be+down!">Send</a>
+</div>
+</div>
+<div class="col-md-12" style="text-align:center;">
+<a class="twitter-timeline" style="width:100% ;margin: 0px auto; height:600px;" href="https://twitter.com/CryptoCompare" data-widget-id="605770772078993408" data-chrome="nofooter noborders transparent  noheader">Tweets by @CryptoCompare</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<script>
+		jQuery.fn.highlight = function() {
+				var el = $(this);
+				el.css({
+						"background": "#ffff99",
+						"opacity": "1"   
+					}).stop( true, true ).fadeTo('slow', 0.9).fadeTo('fast', 1);
+				setTimeout(function(){
+					el.css('background','transparent'); 
+				}, 1000);  
+			
+		}				
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+			$('.show-tooltip').tooltip();
+		
+			$el_content = $('.tweet-content');
+			$el_button = $('.tweet-problem');
+			$el_count = $('.tweet-count');
+		
+			$tweet = $el_content.val();
+			$count = 140 - $tweet.length + ' chars left';
+			$el_count.html($count);
+				
+			$(document).on('keyup', ".tweet-content", function() {
+				$tweet = $el_content.val();						
+				if($tweet.toLowerCase().search("@cryptocompare") == -1){
+					$tweet = '@cryptocompare ' + $tweet;
+				}
+			
+				$count = 140 - $tweet.length + ' chars left';
+				$el_count.html($count);
+				$el_count.highlight();				
+				
+				$el_button = $el_button.attr('href', 'https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.cryptocompare.com%2Fconfig%2Fsplashes%2F500Error.html&text=' + encodeURI($tweet));
+			});			
+		});	
+	</script>
+</body>
+</html>

@@ -338,8 +338,8 @@ There are currently **1973 cryptocurrencies** represented*:
 | `BURST` | BurstCoin |
 | `BUZZ` | BuzzCoin |
 | `BYC` | ByteCent |
-| `BTE` | ByteCoin |
 | `BCN` | ByteCoin |
+| `BTE` | ByteCoin |
 | `GBYTE` | Byteball |
 | `BTH` | Bytether  |
 | `BTM*` | Bytom |
@@ -1918,7 +1918,7 @@ There are currently **1973 cryptocurrencies** represented*:
 | `WISC` | WisdomCoin |
 | `WSC` | WiserCoin |
 | `WSH` | Wish Finance |
-| `WISH*` | WishFinance |
+| `WISH* (1)` | WishFinance |
 | `WLK` | Wolk |
 | `WOMEN` | WomenCoin |
 | `LOG` | Wood Coin |
@@ -2007,12 +2007,12 @@ There are currently **1973 cryptocurrencies** represented*:
 | `VSL` | vSlice |
 | `WBTC` | wBTC |
 
-<small><em>* Last updated: Wed, 10 Jan 2018 20:48:42 GMT</em></small>
+<small><em>* Last updated: Wed, 10 Jan 2018 23:52:50 GMT</em></small>
 <!-- END TABLE INJECT -->
 
 ## Building
 
-The JSON list and the Markdown Table shown above (in this readme) are auto-generated
+The JSON list, the currency icons, and the Markdown Table shown above (in this readme) are auto-generated
 from the coin list made available by the [cryptocompare coinlist API](https://www.cryptocompare.com/api/data/coinlist/),
 and can be updated automatically by running:
 
@@ -2020,6 +2020,8 @@ and can be updated automatically by running:
 $ npm run build
 ```
 
+:bulb: Note that this build routine synchronously downloads the currency icons and saves them to the `images` directory. This means
+that the build routine takes a few minutes, since it has to process thousands of images.
 
 ## License
 
