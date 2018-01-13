@@ -106,7 +106,7 @@ fetch(endpoint)
 
 For more information, view the list of coins: [\`list.md\`](https://github.com/crypti/cryptocurrencies/blob/master/list.md) \n
 ${updateString}`;
-	const statUpdate = readme.replace(readmeTarget,`<!-- BEGIN INJECT STATS -->\n${stats}<!-- END INJECT STATS -->`);
+	const statUpdate = readme.replace(readmeTarget, `<!-- BEGIN INJECT STATS -->\n${stats}<!-- END INJECT STATS -->`);
 	fs.writeFileSync('readme.md', statUpdate);
 
 	console.log('\n', 'Remember to', chalk.yellow('git commit'), 'and', chalk.yellow('npm publish'));
