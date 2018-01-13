@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const fetch = require('isomorphic-fetch');
 const sortby = require('lodash.sortby');
 const request = require('sync-request');
@@ -6,6 +7,7 @@ const ora = require('ora');
 const chalk = require('chalk');
 
 const endpoint = 'https://www.cryptocompare.com/api/data/coinlist/';
+const ghBaseUrl = 'https://raw.githubusercontent.com/crypti/cryptocurrencies/master/images';
 
 const spinner = ora('Building currencies').start();
 spinner.color = 'magenta';
@@ -23,14 +25,28 @@ fetch(endpoint)
 	 */
 	sorted.forEach((currency, index) => {
 		const {Name, CoinName, ImageUrl} = currency;
-		symbols[Name] = CoinName;
+		symbols[Name] = {
+			name: CoinName
+		};
 
 		// download the image for future use
 		if (ImageUrl) {
+			symbols[Name].imageUrl = `${ghBaseUrl}/${Name}.png`;
+
 			spinner.text = `${chalk.gray(index)} ${Name}`;
 			spinner.render();
+
+			const extension = ImageUrl.split('.').pop();
+			const ImageFile = `${Name}.${extension}`;
+			const ImagePath = path.join('images', ImageFile);
+
+			if (fs.existsSync(ImagePath)) {
+				spinner.text = `${ImageFile} detected, skipping`;
+				return;
+			}
+
 			const res = request('get', `https://www.cryptocompare.com${ImageUrl}`);
-			fs.writeFileSync(`images/${Name}.${ImageUrl.split('.').pop()}`, res.getBody());
+			fs.writeFileSync(ImagePath, res.getBody());
 			imagesSaved += 1;
 		}
 	});
