@@ -84,7 +84,7 @@ fetch(endpoint)
 	 * Build the Markdown Table of currencies in the List.md.
 	 */
 	const template = fs.readFileSync('list.md').toString();
-	const data = JSON.parse(fs.readFileSync('cryptocurrencies.json').toString());
+	const data = JSON.parse(fs.readFileSync('cryptocurrencies-meta.json').toString());
 
 	const newSymbols = Object.keys(data);
 

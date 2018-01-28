@@ -37,7 +37,7 @@ This repository currently contains **2092** cryptocurrencies.
 For more information, view the list of coins: [`list.md`](https://github.com/crypti/cryptocurrencies/blob/master/list.md) 
 
 
-<small><em>* Last updated: Sun, 28 Jan 2018 18:18:10 GMT</em></small><!-- END INJECT STATS -->
+<small><em>* Last updated: Sun, 28 Jan 2018 18:38:06 GMT</em></small><!-- END INJECT STATS -->
 
 ## Building
 
