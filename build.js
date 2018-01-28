@@ -12,10 +12,10 @@ const ghBaseUrl = 'https://raw.githubusercontent.com/crypti/cryptocurrencies/mas
 
 const forceOptions = ['force', '--force', '-f', '-force'];
 // Iterate through opts and return true if any forceOptions found
-const forceDownload = forceOptions.reduce((acc, currentVal) => {
-	if (acc) return true;
-	return process.argv.indexOf(currentVal) > 0;
-}, false);
+const forceDownload = forceOptions.reduce((acc, currentVal) => (acc) ?
+										true :
+										process.argv.indexOf(currentVal) > 0, false);
+
 const spinner = ora('Building currencies').start();
 spinner.color = 'magenta';
 
@@ -49,8 +49,8 @@ fetch(endpoint)
 			const IconFile = `${Name}-128.${extension}`;
 			const ImagePath = path.join('images', ImageFile);
 
-			symbols[Name].imageUrl = `${ghBaseUrl}/${ImageFile}`;
-			symbols[Name].iconUrl = `${ghBaseUrl}/${IconFile}`;
+			symbolsWithMeta[Name].imageUrl = `${ghBaseUrl}/${ImageFile}`;
+			symbolsWithMeta[Name].iconUrl = `${ghBaseUrl}/${IconFile}`;
 
 			// skip pre-existing images for optimization purposes
 			if (fs.existsSync(ImagePath) && !forceDownload) {
