@@ -32,12 +32,12 @@ cryptocurrencies.symbols();
 ## Cryptocurrencies
 <!-- DO NOT REMOVE THE COMMENTS BELOW, OR EDIT THIS TABLE DIRECTLY. -->
 <!-- BEGIN INJECT STATS -->
-This repository currently contains **1992** cryptocurrencies.
+This repository currently contains **2092** cryptocurrencies.
 
-For more information, view the list of coins: [`list.md`](https://github.com/crypti/cryptocurrencies/blob/master/list.md)
+For more information, view the list of coins: [`list.md`](https://github.com/crypti/cryptocurrencies/blob/master/list.md) 
 
 
-<small><em>* Last updated: Sat, 13 Jan 2018 21:01:33 GMT</em></small><!-- END INJECT STATS -->
+<small><em>* Last updated: Sun, 28 Jan 2018 18:18:10 GMT</em></small><!-- END INJECT STATS -->
 
 ## Building
 

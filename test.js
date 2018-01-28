@@ -1,6 +1,6 @@
 import test from 'ava';
+import cryptoMeta from './cryptocurrencies-meta.json';
 import cryptocurrencies from '.';
-import cryptoMeta from 'cryptocurrencies-meta.json';
 
 test('produces a JSON object', t => {
 	t.is(typeof cryptocurrencies, 'object');

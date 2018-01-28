@@ -21,7 +21,8 @@
   },
   "scripts": {
     "test": "xo && ava",
-    "build": "rm -rf images && mkdir images && node build.js"
+    "build": "rm -rf images && mkdir images && node build.js",
+	"fast-build": "node build.js"
   },
   "files": [
     "cryptocurrencies.json",
