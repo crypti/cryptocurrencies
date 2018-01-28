@@ -16,17 +16,22 @@ $ npm install --save cryptocurrencies
 ```js
 const cryptocurrencies = require('cryptocurrencies');
 
-cryptocurrencies.BTC.name;
+cryptocurrencies.BTC;
 //=> 'Bitcoin'
-
-cryptocurrencies.BTC.imageUrl;
-//=> 'https://raw.githubusercontent.com/crypti/cryptocurrencies/master/images/BTC.png'
-
-cryptocurrencies.BTC.iconUrl;
-//=> 'https://raw.githubusercontent.com/crypti/cryptocurrencies/master/images/BTC-128.png'
 
 cryptocurrencies.symbols();
 //=> ['42', ... 'BTC', 'ETH', 'LTC', ...]
+```
+
+Want more meta information? Download the [cryptocurrencies-meta.json](https://github.com/crypti/cryptocurrencies/blob/master/cryptocurrencies-meta.json) and import it to your project.
+
+```js
+const cryptocurrenciesMeta = require('./cryptocurrencies-meta.json');
+cryptocurrenciesMeta.BTC.imageUrl;
+//=> 'https://raw.githubusercontent.com/crypti/cryptocurrencies/master/images/BTC.png'
+
+cryptocurrenciesMeta.BTC.iconUrl;
+//=> 'https://raw.githubusercontent.com/crypti/cryptocurrencies/master/images/BTC-128.png'
 ```
 
 ## Cryptocurrencies
@@ -49,8 +54,9 @@ and can be updated automatically by running:
 $ npm run build
 ```
 
-:bulb: Note that this build routine synchronously downloads the currency icons and saves them to the `images` directory. This means
-that the build routine takes a few minutes, since it has to process thousands of images.
+> :bulb: **Important**
+>
+> The standard build routine synchronously downloads the currency icons and saves them to the `images` directory. This means that the build routine takes a few minutes, since it has to process thousands of images. Use `npm run fast-build` to skip existing images that may have already been downloaded.
 
 ## License
 
