@@ -1,11 +1,15 @@
 import test from 'ava';
 import cryptocurrencies from '.';
+import cryptoMeta from 'cryptocurrencies-meta.json';
 
 test('produces a JSON object', t => {
 	t.is(typeof cryptocurrencies, 'object');
-	t.is(cryptocurrencies.BTC.name, 'Bitcoin');
-	t.is(cryptocurrencies.BTC.imageUrl, 'https://raw.githubusercontent.com/crypti/cryptocurrencies/master/images/BTC.png');
-	t.is(cryptocurrencies.BTC.iconUrl, 'https://raw.githubusercontent.com/crypti/cryptocurrencies/master/images/BTC-128.png');
+	t.is(cryptocurrencies.BTC, 'Bitcoin');
+});
+
+test('produce meta JSON', t => {
+	t.is(cryptoMeta.BTC.imageUrl, 'https://raw.githubusercontent.com/crypti/cryptocurrencies/master/images/BTC.png');
+	t.is(cryptoMeta.BTC.iconUrl, 'https://raw.githubusercontent.com/crypti/cryptocurrencies/master/images/BTC-128.png');
 });
 
 test('.symbols', t => {
