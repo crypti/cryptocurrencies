@@ -10,6 +10,12 @@ const sharp = require('sharp');
 const endpoint = 'https://www.cryptocompare.com/api/data/coinlist/';
 const ghBaseUrl = 'https://raw.githubusercontent.com/crypti/cryptocurrencies/master/images';
 
+const forceOptions = ['force', '--force', '-f', '-force'];
+// Iterate through opts and return true if any forceOptions found
+const forceDownload = forceOptions.reduce((acc, currentVal) => {
+	if (acc) return true;
+	return process.argv.indexOf(currentVal) > 0;
+}, false);
 const spinner = ora('Building currencies').start();
 spinner.color = 'magenta';
 
@@ -19,6 +25,7 @@ fetch(endpoint)
 	const sorted = sortby(json.Data, o => o.CoinName);
 
 	const symbols = {};
+	const symbolsWithMeta = {};
 	let imagesSaved = 0;
 
 	/**
@@ -26,9 +33,11 @@ fetch(endpoint)
 	 */
 	sorted.forEach((currency, index) => {
 		const {Name, CoinName, ImageUrl} = currency;
-		symbols[Name] = {
+		symbolsWithMeta[Name] = {
 			name: CoinName
 		};
+
+		symbols[Name] = CoinName;
 
 		// download the image for future use
 		if (ImageUrl) {
@@ -44,7 +53,7 @@ fetch(endpoint)
 			symbols[Name].iconUrl = `${ghBaseUrl}/${IconFile}`;
 
 			// skip pre-existing images for optimization purposes
-			if (fs.existsSync(ImagePath)) {
+			if (fs.existsSync(ImagePath) && !forceDownload) {
 				spinner.text = `${Name}'s image and icon detected, skipping`;
 				return;
 			}
@@ -63,8 +72,9 @@ fetch(endpoint)
 	spinner.succeed([`${imagesSaved} images saved to /images`]);
 
 	spinner.color = 'yellow';
-	spinner.start(`Saving cryptocurrencies.json file`);
+	spinner.start(`Saving cryptocurrencies.json & cryptocurrencies-meta.json file`);
 
+	fs.writeFileSync('cryptocurrencies-meta.json', JSON.stringify(symbolsWithMeta, null, 2));
 	fs.writeFileSync('cryptocurrencies.json', JSON.stringify(symbols, null, 2));
 	spinner.succeed(`${sorted.length} currencies saved to cryptocurrencies.json`);
 
