@@ -30,7 +30,7 @@ fetch(endpoint)
 			spinner.text = `${chalk.gray(index)} ${Name}`;
 			spinner.render();
 			const res = request('get', `https://www.cryptocompare.com${ImageUrl}`);
-			fs.writeFileSync(`images/${Name}.${ImageUrl.split('.').pop()}`, res.getBody());
+			fs.writeFileSync(`images/${Name.replace(/[:*?\\/<>|]/g, '_')}.${ImageUrl.split('.').pop()}`, res.getBody());
 			imagesSaved += 1;
 		}
 	});
