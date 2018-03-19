@@ -2,12 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>The website is restarting</title>
-<script type="text/javascript">
-//<![CDATA[
-window.__mirage2 = {petok:"760a9efa1171f87cc2fb6c99b942820a8ad7c1ae-1519432275-1800"};
-//]]>
-</script>
-<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
@@ -106,6 +100,12 @@ window.__mirage2 = {petok:"760a9efa1171f87cc2fb6c99b942820a8ad7c1ae-1519432275-1
 <div class="container">
 <div class="row">
 <div class="col-md-4" style="text-align:center;">
+<script type="text/javascript">
+//<![CDATA[
+window.__mirage2 = {petok:"06a499a9e6671176afd5c79c9105362ad725ce43-1521501230-1800"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
 <img data-cfstyle="width:100%;max-width:300px;" data-cfsrc="https://www.cryptocompare.com/media/19586/error-500.png" style="display:none;visibility:hidden;" /><noscript><img style="width:100%;max-width:300px;" src="https://www.cryptocompare.com/media/19586/error-500.png" /></noscript>
 </div>
 <div class="bubble col-md-8">
