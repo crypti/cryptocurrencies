@@ -28,8 +28,9 @@ cryptocurrencies.symbols();
 <!-- Use `npm run build` to auto-generate the table. -->  
 
 <!-- BEGIN TABLE INJECT -->
-There are currently **2343 cryptocurrencies** represented*:
+There are currently **2344 cryptocurrencies** represented*:
 
+<small><em>* Last updated: Tue, 20 Mar 2018 23:41:23 GMT</em></small>
 
 | Symbol | Name |
 | :------ | :------ |
@@ -632,7 +633,7 @@ There are currently **2343 cryptocurrencies** represented*:
 | `DRACO` | DT Token |
 | `DAI` | Dai |
 | `DAR` | Darcrus |
-| `DRC*` | Darico |
+| `DEC*` | Darico |
 | `DARK` | Dark |
 | `DISK` | Dark Lisk |
 | `MOOND` | Dark Moon |
@@ -899,7 +900,7 @@ There are currently **2343 cryptocurrencies** represented*:
 | `FCN` | FantomCoin  |
 | `FRD` | Farad |
 | `FST` | FastCoin |
-| `DROP` | FaucetCoin |
+| `DROP*` | FaucetCoin |
 | `FAZZ` | FazzCoin |
 | `FTC` | FeatherCoin |
 | `FIL` | FileCoin |
@@ -1132,7 +1133,6 @@ There are currently **2343 cryptocurrencies** represented*:
 | `ILCT` | ILCoin Token |
 | `IML` | IMMLA |
 | `INS` | INS Ecosystem |
-| `Invacio` | INV* |
 | `IOC` | IOCoin |
 | `IOST` | IOS token |
 | `IOT` | IOTA |
@@ -1186,6 +1186,7 @@ There are currently **2343 cryptocurrencies** represented*:
 | `IPBC` | Interplanetary Broadcast Coin |
 | `HOLD` | Interstellar Holdings |
 | `ITZ` | Interzone |
+| `INV*` | Invacio |
 | `IFT` | InvestFeed |
 | `INV` | Invictus |
 | `IVZ` | InvisibleCoin |
@@ -1284,6 +1285,7 @@ There are currently **2343 cryptocurrencies** represented*:
 | `LGD*` | Legendary Coin |
 | `LGD` | Legends Cryptocurrency |
 | `LGO` | Legolas Exchange |
+| `LELE` | Lelecoin |
 | `LEMON` | LemonCoin |
 | `LCT` | LendConnect |
 | `LOAN` | Lendoit |
@@ -2212,7 +2214,7 @@ There are currently **2343 cryptocurrencies** represented*:
 | `VRM` | Verium |
 | `VRS` | Veros |
 | `VERSA` | Versa Token |
-| `VTC` | VertCoin |
+| `VTC` | Vertcoin |
 | `VTX` | Vertex |
 | `VST` | Vestarin |
 | `VZT` | Vezt |
@@ -2293,7 +2295,7 @@ There are currently **2343 cryptocurrencies** represented*:
 | `XDE2` | XDE II |
 | `XG` | XG Sports |
 | `XXX` | XXXCoin |
-| `XYO` | XYO Network |
+| `XYO` | XYO |
 | `XNX` | XanaxCoin |
 | `XAU` | XauCoin |
 | `XAUR` | Xaurum |
@@ -2377,7 +2379,6 @@ There are currently **2343 cryptocurrencies** represented*:
 | `VSL` | vSlice |
 | `WBTC*` | wBTC |
 
-<small><em>* Last updated: Mon, 19 Mar 2018 23:18:13 GMT</em></small>
 <!-- END TABLE INJECT -->
 
 ## Building
