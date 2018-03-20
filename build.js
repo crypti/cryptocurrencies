@@ -54,6 +54,7 @@ fetch(endpoint)
 	const newSymbols = Object.keys(data);
 
 	let table = `There are currently **${newSymbols.length} cryptocurrencies** represented*:\n`;
+	table += `\n<small><em>* Last updated: ${new Date().toUTCString()}</em></small>`;
 	table += '\n\n';
 	table += '| Symbol | Name |\n';
 	table += '| :------ | :------ |\n';
@@ -61,8 +62,6 @@ fetch(endpoint)
 	newSymbols.forEach(symbol => {
 		table += `| \`${symbol}\` | ${data[symbol]} |\n`;
 	});
-
-	table += `\n<small><em>* Last updated: ${new Date().toUTCString()}</em></small>`;
 
 	// Look for the HTML comments in the README as a target
 	const targetRegex = /<!-- BEGIN TABLE INJECT -->(\w|\W)*<!-- END TABLE INJECT -->/gim;
