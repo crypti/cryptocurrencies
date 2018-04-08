@@ -22,10 +22,12 @@ cryptocurrencies.BTC;
 cryptocurrencies.symbols();
 //=> ['42', ... 'BTC', 'ETH', 'LTC', ...]
 ```
+## Synced with Coinmarketcap
+The list of cryptocurrencies is synced with [Coinmarketcap.com](https://coinmarketcap.com/). You can also do this yourself by running `npm run sync`. Resulting in adding missing cryptocurrencies to `cryptocurrencies.json`.
 
 ## Cryptocurrencies
 <!-- DO NOT REMOVE THE COMMENTS BELOW, OR EDIT THIS TABLE DIRECTLY. -->
-<!-- Use `npm run build` to auto-generate the table. -->  
+<!-- Use `npm run build` to auto-generate the table. -->
 
 <!-- BEGIN TABLE INJECT -->
 There are currently **2344 cryptocurrencies** represented*:
