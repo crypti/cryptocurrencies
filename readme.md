@@ -30,7 +30,7 @@ cryptocurrencies.symbols();
 <!-- BEGIN TABLE INJECT -->
 There are currently **2738 cryptocurrencies** represented*:
 
-<small><em>* Last updated: Sat, 07 Jul 2018 21:49:11 GMT</em></small>
+<small><em>* Last updated: Sat, 07 Jul 2018 22:00:37 GMT</em></small>
 
 | Symbol | Name |
 | :------ | :------ |
