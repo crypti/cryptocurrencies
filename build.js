@@ -40,7 +40,7 @@ fetch(endpoint)
 	 */
 	const sortedByNames = sortby(json.Data, o => o.Name);
 	const names = {};
-	sortedByNames.forEach((currency) => {
+	sortedByNames.forEach(currency => {
 		const {Name, CoinName} = currency;
 		names[CoinName] = Name;
 	});
