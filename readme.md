@@ -870,6 +870,7 @@ There are currently **2842 cryptocurrencies** represented*:
 | `DRA` | DraculaCoin |
 | `DFT` | Draftcoin |
 | `DRG` | Dragon Coin |
+| `DRGL` | Dragonglass |
 | `XDB` | DragonSphere |
 | `DRGN` | Dragonchain |
 | `DRM8` | Dream8Coin |
