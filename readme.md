@@ -30,7 +30,7 @@ cryptocurrencies.symbols();
 <!-- BEGIN TABLE INJECT -->
 There are currently **2969 cryptocurrencies** represented*:
 
-<small><em>* Last updated: Sat, 01 Sep 2018 07:17:42 GMT</em></small>
+<small><em>* Last updated: Sat, 01 Sep 2018 07:31:48 GMT</em></small>
 
 | Symbol | Name |
 | :------ | :------ |
@@ -43,8 +43,8 @@ There are currently **2969 cryptocurrencies** represented*:
 | `888` | Octocoin |
 | `1337` | 1337 |
 | `2015` | 2015 coin |
-| `ARC*` |  Arcade City |
-| `CLUB` |  ClubCoin |
+| `ARC*` | Arcade City |
+| `CLUB` | ClubCoin |
 | `007` | 007 coin |
 | `ZCN` | 0chain |
 | `ZRX` | 0x |
@@ -218,7 +218,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `REP` | Augur |
 | `AURS` | Aureus |
 | `AURA` | Aurora |
-| `AOA` | Aurora  |
+| `AOA` | Aurora |
 | `AUR` | Aurora Coin |
 | `AUN` | Authoreon |
 | `ATS` | Authorship |
@@ -430,7 +430,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `XBP*` | BlitzPredict |
 | `ARY` | Block Array |
 | `CAT*` | BlockCAT |
-| `BCDN` | BlockCDN  |
+| `BCDN` | BlockCDN |
 | `LNC` | BlockLancer |
 | `BCPT` | BlockMason Credit Protocol |
 | `BMH` | BlockMesh |
@@ -456,7 +456,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `BNB*` | Boats and Bitches |
 | `BOB*` | Bob Coin |
 | `BOT` | Bodhi |
-| `BOE` | Bodhi  |
+| `BOE` | Bodhi |
 | `BOG` | Bogcoin |
 | `BOLD` | Bold |
 | `BLN*` | Bolenum |
@@ -500,7 +500,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `BTE` | ByteCoin |
 | `BCN` | ByteCoin |
 | `GBYTE` | Byteball |
-| `BTH` | Bytether  |
+| `BTH` | Bytether |
 | `BTM*` | Bytom |
 | `XCT` | C-Bits |
 | `CAIx` | CAIx |
@@ -537,7 +537,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `XCD*` | Capdax |
 | `CAPP` | Cappasity |
 | `CPC` | CapriCoin |
-| `CAR` | CarBlock  |
+| `CAR` | CarBlock |
 | `CTX` | CarTaxi |
 | `CV` | CarVertical |
 | `CARBON` | Carboncoin |
@@ -635,20 +635,20 @@ There are currently **2969 cryptocurrencies** represented*:
 | `CLN` | Colu Local Network |
 | `CMT` | CometCoin |
 | `CBT` | CommerceBlock Token |
-| `CMM` | Commercium  |
+| `CMM` | Commercium |
 | `CDX` | Commodity Ad Network |
 | `COMM` | Community Coin |
 | `COC` | Community Coin |
 | `CMP` | Compcoin |
 | `COMP` | Compound Coin |
 | `CPN` | CompuCoin |
-| `CYC` | ConSpiracy Coin  |
+| `CYC` | ConSpiracy Coin |
 | `CNL` | ConcealCoin |
 | `RAIN` | Condensate |
 | `CFD` | Confido |
 | `CJT` | ConnectJob Token |
 | `CQST` | ConquestCoin |
-| `DAG` | Constellation  |
+| `DAG` | Constellation |
 | `CNN` | Content Neutrality Network |
 | `CAN*` | Content and AD Network |
 | `BOX` | ContentBox |
@@ -684,7 +684,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `XCRE` | Creatio |
 | `CREA` | CreativeChain |
 | `CRDNC` | Credence Coin |
-| `CRB` | Creditbit  |
+| `CRB` | Creditbit |
 | `CRE*` | Creditcoin |
 | `CDPT` | Creditor Data Platform |
 | `CRE` | Credits |
@@ -743,7 +743,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `POINTS` | Cryptsy Points |
 | `CRTM` | Cryptum |
 | `CVCOIN` | Crypviser |
-| `CCT` | Crystal Clear Token  |
+| `CCT` | Crystal Clear Token |
 | `AUTO` | Cube |
 | `QBT` | Cubits |
 | `CTKN` | Curaizon |
@@ -862,7 +862,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `DBG` | Digital Bullion Gold |
 | `DDF` | Digital Developers Fund |
 | `DRS` | Digital Rupees |
-| `XDN` | DigitalNote  |
+| `XDN` | DigitalNote |
 | `DP` | DigitalPrice |
 | `WAGE` | Digiwage |
 | `DGD` | Digix DAO |
@@ -989,14 +989,14 @@ There are currently **2969 cryptocurrencies** represented*:
 | `MBRS` | Embers |
 | `EMD` | Emerald |
 | `EMC` | Emercoin |
-| `EMN` | Eminent Token  |
+| `EMN` | Eminent Token |
 | `EMIGR` | EmiratesGoldCoin |
 | `EPY*` | Emphy |
 | `EMPC` | EmporiumCoin |
 | `EPY` | Empyrean |
 | `DNA` | EncrypGen |
 | `ETT` | EncryptoTel |
-| `EDR*` | Endor Protocol Token  |
+| `EDR*` | Endor Protocol Token |
 | `ENE` | EneCoin |
 | `ENQ` | Enecuum |
 | `ETK` | Energi Token |
@@ -1059,7 +1059,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `FUEL` | Etherparty |
 | `ESC` | Ethersportcoin |
 | `NEC*` | Ethfinex Nectar Token |
-| `HORSE` | Ethorse  |
+| `HORSE` | Ethorse |
 | `ETHOS` | Ethos |
 | `ET4` | Eticket4 |
 | `EUC` | Eurocoin |
@@ -1100,14 +1100,14 @@ There are currently **2969 cryptocurrencies** represented*:
 | `FREE` | FREE coin |
 | `FT` | Fabric Token |
 | `FC` | Facecoin |
-| `FACE` | Faceter  |
+| `FACE` | Faceter |
 | `FCT` | Factoids |
 | `FAIR` | FairCoin |
 | `FAIR*` | FairGame |
 | `FAME` | FameCoin |
 | `FAN` | Fan360 |
 | `XFT` | Fantasy Cash |
-| `FCN` | FantomCoin  |
+| `FCN` | FantomCoin |
 | `FRD` | Farad |
 | `FST` | FastCoin |
 | `DROP*` | FaucetCoin |
@@ -1291,7 +1291,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `GRM` | GridMaster |
 | `GRID*` | GridPay |
 | `GMC` | Gridmaster |
-| `GRS` | Groestlcoin  |
+| `GRS` | Groestlcoin |
 | `GRO` | Gron Digital |
 | `GRWI` | Growers International |
 | `GROW` | GrownCoin |
@@ -1324,9 +1324,9 @@ There are currently **2969 cryptocurrencies** represented*:
 | `HAMS` | HamsterCoin |
 | `HION` | Handelion |
 | `HPC` | HappyCoin |
-| `HCC` | HappyCreatorCoin  |
+| `HCC` | HappyCreatorCoin |
 | `HRB` | Harbour DAO |
-| `HSC` | HashCoin  |
+| `HSC` | HashCoin |
 | `HGS` | HashGains |
 | `XHV` | Haven Protocol |
 | `HAV` | Havven |
@@ -1395,7 +1395,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `ICST` | ICST |
 | `IDAP` | IDAP |
 | `IDXM` | IDEX Membership |
-| `IG` | IG Token  |
+| `IG` | IG Token |
 | `ILC` | ILCoin |
 | `ILCT` | ILCoin Token |
 | `IML` | IMMLA |
@@ -1533,13 +1533,13 @@ There are currently **2969 cryptocurrencies** represented*:
 | `KLC` | KiloCoin |
 | `KIN` | Kin |
 | `KIND` | Kind Ads |
-| `KVT` | Kinesis Velocity Token  |
+| `KVT` | Kinesis Velocity Token |
 | `KING` | King93 |
 | `KNC**` | KingN Coin |
 | `MEOW` | Kittehcoin |
 | `KED` | Klingon Empire Darsek |
 | `KDC` | Klondike Coin |
-| `KNW` | Knowledge  |
+| `KNW` | Knowledge |
 | `KOBO` | KoboCoin |
 | `KOLION` | Kolion |
 | `KMD` | Komodo |
@@ -1617,7 +1617,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `LCWP` | LiteCoinW Plus |
 | `LTCR` | LiteCreed |
 | `LDOGE` | LiteDoge |
-| `LTB` | Litebar  |
+| `LTB` | Litebar |
 | `LTC` | Litecoin |
 | `LTCH` | Litecoin Cash |
 | `LCP` | Litecoin Plus |
@@ -1665,7 +1665,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `MCV` | MCV Token |
 | `MFX` | MFChain |
 | `MIS` | MIScoin |
-| `MMNXT` | MMNXT  |
+| `MMNXT` | MMNXT |
 | `MMO` | MMOCoin |
 | `MMXVI` | MMXVI |
 | `MDX*` | MODEX Token |
@@ -1694,7 +1694,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `MAR` | MarijuanaCoin |
 | `MASP` | Market.space |
 | `MRS` | MarsCoin |
-| `MARS` | MarsCoin  |
+| `MARS` | MarsCoin |
 | `MXT` | MartexCoin |
 | `MARV` | Marvelous |
 | `MARX` | MarxCoin |
@@ -1714,7 +1714,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `MZC` | MazaCoin |
 | `MBIT` | Mbitbooks |
 | `MLITE` | MeLite |
-| `MDT*` | Measurable Data Token  |
+| `MDT*` | Measurable Data Token |
 | `MED*` | MediBloc |
 | `MEDI` | MediBond |
 | `MCU` | MediChain |
@@ -1901,7 +1901,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `NIHL` | Nihilo Coin |
 | `NMB` | Nimbus Coin |
 | `NIMFA` | Nimfamoney |
-| `NIM` | Nimiq  |
+| `NIM` | Nimiq |
 | `NTC` | NineElevenTruthCoin |
 | `NDOGE` | NinjaDoge |
 | `NBR` | Niobio Cash |
@@ -1933,7 +1933,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `NXT` | Nxt |
 | `NYAN` | NyanCoin |
 | `NBL` | Nybble |
-| `ODE` | ODEM  |
+| `ODE` | ODEM |
 | `ODMC` | ODMCoin |
 | `OK` | OKCash |
 | `OKOIN` | OKOIN |
@@ -2203,7 +2203,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `QWARK` | Qwark |
 | `QWC` | Qwertycoin |
 | `RFL` | RAFL |
-| `KRX` | RAVN Korrax  |
+| `KRX` | RAVN Korrax |
 | `RAWG` | RAWG |
 | `RAC` | RAcoin |
 | `RHOC` | RChain |
@@ -2221,7 +2221,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `RDN` | RadonPay |
 | `RDN*` | Raiden Network |
 | `RAP` | Rapture |
-| `RTE` | Rate3  |
+| `RTE` | Rate3 |
 | `XRA` | Ratecoin |
 | `RATIO` | Ratio |
 | `RAVE` | Ravelous |
@@ -2279,7 +2279,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `ROX` | Robotina |
 | `RKT` | Rock Token |
 | `ROK` | Rockchain |
-| `ROCK*` | RocketCoin  |
+| `ROCK*` | RocketCoin |
 | `RPC` | RonPaulCoin |
 | `RSC` | Ronaldinho Soccer Coin |
 | `ROOT` | RootCoin |
@@ -2312,7 +2312,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `SNM` | SONM |
 | `SXDT` | SPECTRE Dividend Token |
 | `SXUT` | SPECTRE Utility Token |
-| `SPICE` | SPiCE Venture Capital  |
+| `SPICE` | SPiCE Venture Capital |
 | `SSV` | SSVCoin |
 | `STAC` | STAC |
 | `EURS` | STASIS EURS |
@@ -2640,8 +2640,8 @@ There are currently **2969 cryptocurrencies** represented*:
 | `TMT*` | ToTheMoon |
 | `TODAY` | TodayCoin |
 | `TAAS` | Token as a Service |
-| `TKN` | TokenCard   |
-| `TCT` | TokenClub  |
+| `TKN` | TokenCard |
+| `TCT` | TokenClub |
 | `TDS` | TokenDesk |
 | `TPAY*` | TokenPay |
 | `ACE` | TokenStars |
@@ -2774,7 +2774,7 @@ There are currently **2969 cryptocurrencies** represented*:
 | `VLTC` | VaultCoin |
 | `XVC` | Vcash |
 | `VET` | Vechain |
-| `VEC2` | VectorCoin 2.0  |
+| `VEC2` | VectorCoin 2.0 |
 | `VLX` | Velox |
 | `VLT` | Veltor |
 | `VRA` | Verasity |

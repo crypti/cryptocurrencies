@@ -23,7 +23,7 @@ fetch(endpoint)
 	 */
 	sorted.forEach((currency, index) => {
 		const {Name, CoinName, ImageUrl} = currency;
-		symbols[Name] = CoinName;
+		symbols[Name] = CoinName.trim();
 
 		// download the image for future use
 		if (ImageUrl) {
