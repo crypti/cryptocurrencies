@@ -11,3 +11,21 @@ test('.symbols', t => {
 	t.is(Array.isArray(symbols), true);
 	t.is(symbols.length, Object.keys(cryptocurrencies).length);
 });
+
+test('.names', t => {
+	const names = cryptocurrencies.names();
+	t.is(Array.isArray(names), true);
+	t.is(names.length, Object.keys(cryptocurrencies).length);
+});
+
+test('.search by name', t => {
+	const {name, symbol} = cryptocurrencies.search({name: 'bitcoin'});
+	t.is(symbol, 'BTC');
+	t.is(name, 'Bitcoin');
+});
+
+test('.search by symbol', t => {
+	const {name, symbol} = cryptocurrencies.search({symbol: 'btc'});
+	t.is(symbol, 'BTC');
+	t.is(name, 'Bitcoin');
+});
