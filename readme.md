@@ -21,11 +21,20 @@ cryptocurrencies.BTC;
 
 cryptocurrencies.symbols();
 //=> ['42', ... 'BTC', 'ETH', 'LTC', ...]
+
+cryptocurrencies.names();
+//=> ['Bitcoin', ... 'Ethereum', ...]
+
+cryptocurrencies.search({symbol: 'btc'});
+//=> {symbol: 'BTC', name: 'Bitcoin'}
+
+cryptocurrencies.search({name: 'bitcoin'});
+//=> {symbol: 'BTC', name: 'Bitcoin'}
 ```
 
 ## Cryptocurrencies
 <!-- DO NOT REMOVE THE COMMENTS BELOW, OR EDIT THIS TABLE DIRECTLY. -->
-<!-- Use `npm run build` to auto-generate the table. -->  
+<!-- Use `npm run build` to auto-generate the table. -->
 
 <!-- BEGIN TABLE INJECT -->
 There are currently **3758 cryptocurrencies** represented*:
