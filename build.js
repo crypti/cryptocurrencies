@@ -5,7 +5,6 @@ import sortby from 'lodash.sortby';
 import request from 'sync-request';
 import ora from 'ora';
 import chalk from 'chalk';
-import {getDetailSummaryFromSymbolData} from './utils/markdown-table.js';
 
 const endpoint = 'https://www.cryptocompare.com/api/data/coinlist/';
 
@@ -56,7 +55,7 @@ fetch(endpoint)
 		spinner.start('Saving Readme');
 
 		/**
-		 * Build the Markdown Table of currencies in the Readme.
+		 * Build the markdown table of currency info in the Readme.
 		 */
 		const template = fs.readFileSync('readme.md').toString();
 		const data = JSON.parse(
@@ -69,17 +68,14 @@ fetch(endpoint)
 		table += `\n<small><em>* Last updated: ${new Date().toUTCString()}</em></small>`;
 		table += '\n\n';
 
-		table += getDetailSummaryFromSymbolData(data);
-
 		// Look for the HTML comments in the README as a target
-		const targetRegex
-			= /<!-- begin table inject -->(\w|\W)*<!-- end table inject -->/gim;
+		const targetRegex = /<!-- begin inject -->(\w|\W)*<!-- end inject -->/gim;
 		const updated = template.replaceAll(
 			targetRegex,
-			`<!-- BEGIN TABLE INJECT -->\n${table}\n<!-- END TABLE INJECT -->`,
+			`<!-- BEGIN INJECT -->\n${table}\n<!-- END INJECT -->`,
 		);
 		fs.writeFileSync('readme.md', updated);
-		spinner.succeed(['Readme Markdown Table updated']);
+		spinner.succeed(['Readme Markdown updated']);
 
 		console.log(
 			'\n',
