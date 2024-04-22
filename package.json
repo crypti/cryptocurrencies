@@ -8,7 +8,7 @@
   "contributors": [
     {
       "name": "Michael Wuergler",
-      "email": "senjudev@gmail.com",
+      "email": "wuergler@gmail.com",
       "url": "github.com/radiovisual"
     },
     {
@@ -41,12 +41,14 @@
     "esnext": true
   },
   "dependencies": {
-    "ava": "^6.1.2",
     "chalk": "^5.3.0",
     "isomorphic-fetch": "^3.0.0",
     "lodash.sortby": "^4.7.0",
     "ora": "^8.0.1",
     "sync-request": "^6.1.0",
     "xo": "^0.58.0"
+  },
+  "devDependencies": {
+    "ava": "^6.1.2"
   }
 }

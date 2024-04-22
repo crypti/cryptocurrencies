@@ -5,6 +5,7 @@ import sortby from 'lodash.sortby';
 import request from 'sync-request';
 import ora from 'ora';
 import chalk from 'chalk';
+import {getDetailSummaryFromSymbolData} from './utils/markdown-table.js';
 
 const endpoint = 'https://www.cryptocompare.com/api/data/coinlist/';
 
@@ -67,12 +68,8 @@ fetch(endpoint)
 		let table = `There are currently **${newSymbols.length} cryptocurrencies** represented*:\n`;
 		table += `\n<small><em>* Last updated: ${new Date().toUTCString()}</em></small>`;
 		table += '\n\n';
-		table += '| Symbol | Name |\n';
-		table += '| :------ | :------ |\n';
 
-		for (const symbol of newSymbols) {
-			table += `| \`${symbol}\` | ${data[symbol]} |\n`;
-		}
+		table += getDetailSummaryFromSymbolData(data);
 
 		// Look for the HTML comments in the README as a target
 		const targetRegex
