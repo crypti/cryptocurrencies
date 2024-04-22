@@ -1,5 +1,8 @@
-'use strict';
-const symbolList = require('./cryptocurrencies.json');
+import {readFile} from 'node:fs/promises';
 
-module.exports = symbolList;
-module.exports.symbols = () => Object.keys(symbolList);
+const fileUrl = new URL('cryptocurrencies.json', import.meta.url);
+const symbolList = JSON.parse(await readFile(fileUrl, 'utf8'));
+
+export const symbols = Object.keys(symbolList);
+
+export default symbolList;
