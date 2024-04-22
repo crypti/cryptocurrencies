@@ -1,4 +1,4 @@
-# cryptocurrencies [![Build Status](https://travis-ci.org/crypti/cryptocurrencies.svg?branch=master)](https://travis-ci.org/crypti/cryptocurrencies)
+# cryptocurrencies [![CI](https://github.com/crypti/cryptocurrencies/actions/workflows/ci.yml/badge.svg)](https://github.com/crypti/cryptocurrencies/actions/workflows/ci.yml)
 
 > A JSON list of all the cryptocurrency symbols and names
 
