@@ -3,7 +3,10 @@
   "version": "8.0.1",
   "description": "A JSON list of all the cryptocurrency symbols",
   "license": "MIT",
-  "repository": "crypti/cryptocurrencies",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crypti/cryptocurrencies.git"
+  },
   "type": "module",
   "contributors": [
     {
